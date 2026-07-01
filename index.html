@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Srijayee Ghosh | Content Strategist &amp; Senior Content Writer</title>
-<meta name="description" content="Content strategy and writing across 15+ industries — 24 pieces independently confirmed live today, with the full 150-piece catalogue available on request.">
+<meta name="description" content="Content strategy and writing across 15+ industries — 75 pieces independently confirmed live today, with the full 150-piece catalogue available on request.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
   tailwind.config = { theme: { extend: { fontFamily: {
     sans: ['Inter', 'sans-serif'],
@@ -37,6 +38,7 @@
         <a href="#framework" class="hover:text-white transition-colors">Core Capabilities</a>
         <a href="#case-studies" class="hover:text-white transition-colors">Case Studies</a>
         <a href="#process" class="hover:text-white transition-colors">Process</a>
+        <a href="#by-the-numbers" class="hover:text-white transition-colors">By the Numbers</a>
         <a href="#verified" class="hover:text-white transition-colors">Verified Live</a>
         <a href="#archive" class="hover:text-white transition-colors">Full Archive</a>
         <a href="#credentials" class="hover:text-white transition-colors">Credentials</a>
@@ -59,7 +61,7 @@
         Content strategy, <span class="gradient-text">proven — not just claimed.</span>
       </h1>
       <p class="text-slate-400 text-base sm:text-lg max-w-2xl font-light leading-relaxed mb-10">
-        Two years into a content career, I was trusted with AI content quality at <strong class="text-white">Amazon's Alexa team</strong>. In the year since, I've built a 150-piece, independently verified body of work across 15+ industries and 13 content formats — every figure below checked against what's live today, not self-reported.
+        Two years into a content career, I was trusted with AI content quality at <strong class="text-white">Amazon's Alexa team</strong>. In the year since, I've built a 150-piece, independently verified body of work across 15+ industries and 13 content formats — <strong class="text-white">75 pieces confirmed live today</strong>, every figure checked against what's live, not self-reported.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
         <a href="#case-studies" class="bg-white hover:bg-slate-200 text-slate-950 font-bold text-sm px-8 py-4 rounded-xl text-center transition-all shadow-xl active:scale-95">Review Verified Case Studies</a>
@@ -71,7 +73,7 @@
       <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800"><div class="text-2xl font-heading font-extrabold text-white" id="statFormats">13</div><div class="text-xs text-slate-500 font-medium mt-1">Content formats</div></div>
       <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800"><div class="text-2xl font-heading font-extrabold text-white" id="statIndustries">15+</div><div class="text-xs text-slate-500 font-medium mt-1">Industries</div></div>
       <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800"><div class="text-2xl font-heading font-extrabold text-white" id="statPieces">150+</div><div class="text-xs text-slate-500 font-medium mt-1">Pieces catalogued</div></div>
-      <div class="p-5 rounded-2xl bg-slate-950/60 border border-indigo-900"><div class="text-2xl font-heading font-extrabold text-indigo-400" id="statVerified">55</div><div class="text-xs text-slate-500 font-medium mt-1">Confirmed live today</div></div>
+      <div class="p-5 rounded-2xl bg-slate-950/60 border border-indigo-900"><div class="text-2xl font-heading font-extrabold text-indigo-400" id="statVerified">75</div><div class="text-xs text-slate-500 font-medium mt-1">Confirmed live today</div></div>
     </div>
   </section>
 
@@ -81,7 +83,7 @@
       <p class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Operational Methodologies</p>
       <h2 class="font-heading text-3xl font-bold tracking-tight text-white">Strategic Capabilities Matrix</h2>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
       <div class="p-8 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800/80">
         <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 font-heading text-lg font-bold mb-6">SEO</div>
         <h3 class="font-heading text-xl font-bold text-white mb-3">Organic Content Strategy</h3>
@@ -102,10 +104,35 @@
         <h3 class="font-heading text-xl font-bold text-white mb-3">Conversion &amp; Landing Copy</h3>
         <p class="text-slate-400 text-sm font-light leading-relaxed">Service and landing pages structured around one clear action, written to pre-empt objections.</p>
       </div>
+      <div class="p-8 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800/80">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-heading text-lg font-bold mb-6">AI</div>
+        <h3 class="font-heading text-xl font-bold text-white mb-3">AI-Assisted Build &amp; Content Ops</h3>
+        <p class="text-slate-400 text-sm font-light leading-relaxed">This entire site — the verification system, the searchable archive, the charts — was designed and built by me using AI development tools, with no formal coding background.</p>
+      </div>
+    </div>
+
+    <div class="mt-10 p-7 rounded-2xl bg-gradient-to-r from-indigo-950/60 to-slate-950 border border-indigo-900/50">
+      <p class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">A Less Common Line on a Content Resume</p>
+      <h3 class="font-heading text-lg font-bold text-white mb-2">AI Content Quality &amp; Training — Amazon's Alexa Team</h3>
+      <p class="text-slate-400 text-sm font-light leading-relaxed max-w-3xl">Evaluated structured and editorial content against evolving guidelines at scale, performed QA and data verification across large content sets, identified recurring error patterns, and fed insights back into language and content-training initiatives — the same instinct behind the QA step in the process below, and the verification system the whole archive is built on.</p>
+    </div>
+
+    <p class="mt-6 text-xs text-slate-500 mb-3 font-medium">Click any tag to filter the archive below</p>
+    <div class="mt-2 flex flex-wrap gap-2.5">
+      <a href="#archive" onclick="setTimeout(()=>{state.q='SEO';document.getElementById('searchInput').value='SEO';render();},100)" class="text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-800 rounded-full px-3.5 py-2 cursor-pointer hover:border-indigo-500 transition-colors">SEO &amp; Organic Growth</a>
+      <a href="#archive" onclick="setTimeout(()=>{state.category='ecm';render();},100)" class="text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-800 rounded-full px-3.5 py-2 cursor-pointer hover:border-indigo-500 transition-colors">E-Commerce Copywriting</a>
+      <a href="#archive" onclick="setTimeout(()=>{state.category='lseo';render();},100)" class="text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-800 rounded-full px-3.5 py-2 cursor-pointer hover:border-indigo-500 transition-colors">Local SEO</a>
+      <a href="#archive" onclick="setTimeout(()=>{state.category='cpw';render();},100)" class="text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-800 rounded-full px-3.5 py-2 cursor-pointer hover:border-indigo-500 transition-colors">Brand &amp; Website Copywriting</a>
+      <a href="#archive" onclick="setTimeout(()=>{state.category='cxw';render();},100)" class="text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-800 rounded-full px-3.5 py-2 cursor-pointer hover:border-indigo-500 transition-colors">CX &amp; Crisis Writing</a>
+      <a href="#archive" onclick="setTimeout(()=>{state.category='uxw';render();},100)" class="text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-800 rounded-full px-3.5 py-2 cursor-pointer hover:border-indigo-500 transition-colors">UX Writing</a>
+      <a href="#archive" onclick="setTimeout(()=>{state.category='smc';render();},100)" class="text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-800 rounded-full px-3.5 py-2 cursor-pointer hover:border-indigo-500 transition-colors">Campaign Strategy</a>
+      <span class="text-xs font-semibold text-indigo-300 bg-indigo-950/60 border border-indigo-900 rounded-full px-3.5 py-2">AI Content Quality &amp; Training</span>
+      <span class="text-xs font-semibold text-indigo-300 bg-indigo-950/60 border border-indigo-900 rounded-full px-3.5 py-2">Multi-Project &amp; Multi-Format Management</span>
+      <span class="text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-800 rounded-full px-3.5 py-2">Cross-Industry Adaptability</span>
+      <span class="text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-800 rounded-full px-3.5 py-2">QA &amp; Guideline Compliance</span>
+      <span class="text-xs font-semibold text-amber-300 bg-amber-950/40 border border-amber-900 rounded-full px-3.5 py-2">AI-Assisted Web Development</span>
     </div>
   </section>
-
-  <!-- ============ CASE STUDIES ============ -->
   <section id="case-studies" class="bg-slate-950 border-t border-b border-slate-800 py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="mb-12">
@@ -173,7 +200,7 @@
           <div class="p-6 space-y-3">
             <h3 class="font-heading text-xl font-bold text-white">Building a Verifiable Body of Work</h3>
             <div class="text-xs space-y-1.5 text-slate-400 border-t border-b border-slate-800/80 py-3 font-light">
-              <p><strong class="text-slate-200">Context:</strong> Trusted with AI content quality at Amazon's Alexa team two years into a content career; built a verified 150-piece archive across 15+ industries in the year after.</p>
+              <p><strong class="text-slate-200">Context:</strong> Two years into a content career, trusted with AI content quality at Amazon's Alexa team; built a verified 150-piece archive across 15+ industries in the year after.</p>
               <p><strong class="text-slate-200">Challenge:</strong> Breadth this wide usually reads as a lack of specialization to a fast-scanning recruiter.</p>
               <p><strong class="text-slate-200">Approach:</strong> Catalogued and independently verified the entire body of work instead of a curated highlight reel.</p>
               <p><strong class="text-slate-200">Outcome:</strong> <strong class="text-white">All 150 pieces</strong> individually checked; <strong class="text-white">55 confirmed live</strong> in production today.</p>
@@ -196,7 +223,7 @@
       <div class="p-5 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800/80">
         <span class="font-mono text-xs font-bold text-indigo-400">01</span>
         <h3 class="font-heading text-sm font-bold text-white mt-3 mb-2">Brief &amp; Brand Voice Intake</h3>
-        <p class="text-slate-400 text-xs font-light leading-relaxed">Read the brief against existing brand-voice and style guidelines first — at Textmercato this meant garment-attribute and tone rules per client before a single line got written.</p>
+        <p class="text-slate-400 text-xs font-light leading-relaxed">Read the brief against existing brand-voice and style guidelines first — garment-attribute and tone rules per client, before a single line got written.</p>
       </div>
       <div class="p-5 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800/80">
         <span class="font-mono text-xs font-bold text-purple-400">02</span>
@@ -217,6 +244,24 @@
         <span class="font-mono text-xs font-bold text-amber-400">05</span>
         <h3 class="font-heading text-sm font-bold text-white mt-3 mb-2">Publish, Then Audit</h3>
         <p class="text-slate-400 text-xs font-light leading-relaxed">Delivery isn't the finish line — checking what actually went live, and what happened to it months or years later, is what built the verification system below.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BY THE NUMBERS ============ -->
+  <section id="by-the-numbers" class="bg-slate-950 border-t border-b border-slate-800 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">By the Numbers</p>
+      <h2 class="font-heading text-3xl font-bold tracking-tight text-white mb-10">The Archive, Visualized</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800/80">
+          <h3 class="font-heading text-sm font-bold text-white mb-4">Verification Status — 150 Pieces, Individually Checked</h3>
+          <div class="h-64"><canvas id="verifyChart"></canvas></div>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800/80">
+          <h3 class="font-heading text-sm font-bold text-white mb-4">Pieces by Content Format</h3>
+          <div class="h-64"><canvas id="formatChart"></canvas></div>
+        </div>
       </div>
     </div>
   </section>
@@ -274,20 +319,31 @@
         <p class="text-sm text-slate-400 mt-1 font-light">Ashutosh College, University of Calcutta</p>
       </div>
       <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 flex justify-between items-start gap-3">
-        <div><p class="font-bold text-sm text-white">Management of Fashion and Luxury Companies</p><p class="text-sm text-slate-400 mt-1 font-light">Università Commerciale Luigi Bocconi</p></div>
+        <div>
+          <p class="font-bold text-sm text-white">Management of Fashion and Luxury Companies</p>
+          <p class="text-sm text-slate-400 mt-1 font-light">Università Commerciale Luigi Bocconi</p>
+          <a href="certs/bocconi-fashion-luxury-management.pdf" target="_blank" class="inline-block mt-2 text-[11px] font-bold uppercase text-indigo-400 hover:text-indigo-300">View Certificate ↗</a>
+        </div>
         <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-2.5 py-1 rounded-full shrink-0">85%</span>
       </div>
       <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800">
         <p class="font-bold text-sm text-white">Digital Marketing</p>
         <p class="text-sm text-slate-400 mt-1 font-light">Google Digital Garage</p>
+        <a href="certs/google-digital-garage-marketing.pdf" target="_blank" class="inline-block mt-2 text-[11px] font-bold uppercase text-indigo-400 hover:text-indigo-300">View Certificate ↗</a>
       </div>
       <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800">
         <p class="font-bold text-sm text-white">The Complete Copywriting Course</p>
         <p class="text-sm text-slate-400 mt-1 font-light">Udemy</p>
+        <a href="certs/udemy-copywriting-course.pdf" target="_blank" class="inline-block mt-2 text-[11px] font-bold uppercase text-indigo-400 hover:text-indigo-300">View Certificate ↗</a>
       </div>
       <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 flex justify-between items-start gap-3">
-        <div><p class="font-bold text-sm text-white">Product Management — Professional Certificate</p><p class="text-sm text-slate-400 mt-1 font-light">Coursera</p></div>
-        <span class="text-xs font-semibold text-slate-400 border border-slate-700 px-2.5 py-1 rounded-full shrink-0">In Progress</span>
+        <div>
+          <p class="font-bold text-sm text-white">Product Management — Professional Certificate</p>
+          <p class="text-sm text-slate-400 mt-1 font-light">IBM, via Coursera — 8-course series</p>
+          <p class="text-xs text-slate-500 mt-1 font-light">Course 1 of 8 completed: "Product Management: An Introduction"</p>
+          <a href="certs/coursera-product-management.pdf" target="_blank" class="inline-block mt-2 text-[11px] font-bold uppercase text-indigo-400 hover:text-indigo-300">View Course 1 Certificate ↗</a>
+        </div>
+        <span class="text-xs font-semibold text-slate-400 border border-slate-700 px-2.5 py-1 rounded-full shrink-0">In Progress · 1/8</span>
       </div>
     </div>
     <a href="resume.pdf" download class="inline-flex items-center gap-2 mt-8 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold uppercase tracking-wider px-5 py-3 rounded-xl transition-colors">Download Full Resume →</a>
@@ -297,7 +353,7 @@
   <footer class="bg-slate-950 border-t border-slate-800 py-16">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h2 class="font-heading text-3xl font-bold text-white mb-3">Let's Talk About Your Content.</h2>
-      <p class="text-slate-400 text-sm max-w-md mx-auto font-light mb-10">Two years into a journalism-rooted content career, I was trusted with AI content quality at Amazon's Alexa team. Building toward content strategy roles in fashion, entertainment and sports — open to content work across any industry in the meantime.</p>
+      <p class="text-slate-400 text-sm max-w-md mx-auto font-light mb-10">Two years into a content career, I was trusted with AI content quality at Amazon's Alexa team. Now building toward senior content strategy roles — open to content work across any industry. This site itself, including its content-verification system, was built independently using AI development tools.</p>
       <div class="flex flex-wrap justify-center items-center gap-8 text-xs font-bold uppercase tracking-wider mb-12">
         <a href="mailto:srijayee1234@gmail.com" class="text-indigo-400 hover:text-indigo-300 transition-colors">srijayee1234@gmail.com</a>
         <span class="text-slate-700">|</span>
@@ -325,12 +381,63 @@
 
 <script src="data.js"></script>
 <script>
+if (typeof CATALOG === 'undefined' || typeof TITLE_ONLY === 'undefined' || typeof VERIFIED === 'undefined' || typeof CATEGORIES === 'undefined' || typeof INDUSTRIES === 'undefined') {
+  // data.js failed to load (wrong filename/case, wrong folder, or not uploaded at all).
+  // Fail loudly and visibly instead of leaving every dynamic section silently blank.
+  const msg = 'Content data failed to load (data.js is missing or didn\u2019t load). Charts, the verified-links grid, and the full archive can\u2019t display until data.js is uploaded to the same folder as this page on Netlify, with that exact filename.';
+  console.error(msg);
+  ['verifiedGrid', 'grid'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = '<p class="col-span-full text-center text-amber-400 text-sm py-10 border border-amber-900/50 bg-amber-950/20 rounded-2xl">' + msg + '</p>';
+  });
+  ['verifyChart', 'formatChart'].forEach(id => {
+    const c = document.getElementById(id);
+    if (c && c.parentElement) c.parentElement.innerHTML = '<p class="text-amber-400 text-xs">Chart data unavailable \u2014 data.js not loaded.</p>';
+  });
+  const rc = document.getElementById('resultCount');
+  if (rc) rc.textContent = 'Content data unavailable.';
+} else {
+try {
   const ALL = [...CATALOG, ...TITLE_ONLY].map(e => ({...e, hasFullText: !!e.body, verified: VERIFIED[e.code] || null}));
   document.getElementById('statPieces').textContent = ALL.length + '+';
   const industriesUsed = new Set(ALL.map(e => e.industry));
   document.getElementById('statIndustries').textContent = industriesUsed.size + '+';
   const verifiedEntries = ALL.filter(e => e.verified);
   document.getElementById('statVerified').textContent = verifiedEntries.length;
+
+  // ---- Charts: deferred so a CDN failure never blocks catalogue render ----
+  window.addEventListener('load', function() {
+    try {
+      const exactCount = verifiedEntries.filter(e => e.verified.confidence !== 'domain').length;
+      const domainCount = verifiedEntries.filter(e => e.verified.confidence === 'domain').length;
+      const fullTextNotVerified = ALL.filter(e => !e.verified && e.hasFullText).length;
+      const onRequestNotVerified = ALL.filter(e => !e.verified && !e.hasFullText).length;
+
+      new Chart(document.getElementById('verifyChart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Verified — Exact Link', 'Verified — Domain Confirmed', 'Full Text Available', 'Ruled Out / On Request'],
+          datasets: [{ data: [exactCount, domainCount, fullTextNotVerified, onRequestNotVerified],
+            backgroundColor: ['#34d399', '#fbbf24', '#818cf8', '#475569'],
+            borderColor: '#0f172a', borderWidth: 2 }]
+        },
+        options: { maintainAspectRatio: false,
+          plugins: { legend: { position: 'bottom', labels: { color: '#cbd5e1', font: { size: 11 }, boxWidth: 12 } } } }
+      });
+
+      const catCounts = CATEGORIES.map(c => ALL.filter(e => e.category === c.key).length);
+      new Chart(document.getElementById('formatChart'), {
+        type: 'bar',
+        data: { labels: CATEGORIES.map(c => c.code), datasets: [{ data: catCounts, backgroundColor: '#6366f1', borderRadius: 4 }] },
+        options: { maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
+            y: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { color: '#1e293b' } }
+          } }
+      });
+    } catch(err) { console.warn('Charts skipped:', err.message); }
+  });
 
   // ---- Verified Live grid (all of them) ----
   const vGrid = document.getElementById('verifiedGrid');
@@ -466,6 +573,63 @@
   document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') closeModal(); });
 
   render();
+} catch (err) {
+  console.error('Site script error:', err);
+  const rc = document.getElementById('resultCount');
+  if (rc) rc.textContent = 'Something went wrong loading this section \u2014 check the browser console for details.';
+}
+}
+
+// ----------------------------------------------------------------
+// Graceful handling for local file links (resume + certificate
+// PDFs). If a linked file hasn't been uploaded to this folder yet,
+// clicking it would otherwise dump the visitor on a dead "Page not
+// found" screen. Instead: check the file exists first; if it does,
+// open it normally; if not, show a small on-page notice and keep
+// the visitor right where they are.
+// ----------------------------------------------------------------
+(function () {
+  const toast = document.createElement('div');
+  toast.setAttribute('role', 'status');
+  toast.className = 'fixed left-1/2 -translate-x-1/2 bottom-6 z-[60] max-w-[90vw] px-5 py-3 bg-slate-900 border border-slate-700 text-slate-100 text-xs tracking-wide text-center shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 rounded-xl';
+  document.body.appendChild(toast);
+  let toastTimer = null;
+  function showToast(message) {
+    toast.textContent = message;
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0');
+    }, 3200);
+  }
+
+  const isLocalFileLink = (href) => {
+    if (!href) return false;
+    if (/^(https?:)?\/\//i.test(href)) return false; // external link, leave alone
+    if (/^(mailto:|tel:|#)/i.test(href)) return false; // not a file
+    return /\.(pdf|jpg|jpeg|png)$/i.test(href);
+  };
+
+  document.querySelectorAll('a[href]').forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!isLocalFileLink(href)) return;
+
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      fetch(href, { method: 'HEAD' })
+        .then((res) => {
+          if (res.ok) {
+            window.open(href, link.getAttribute('target') || '_self', 'noopener');
+          } else {
+            showToast('This file isn\u2019t uploaded yet \u2014 check back soon.');
+          }
+        })
+        .catch(() => showToast('This file isn\u2019t uploaded yet \u2014 check back soon.'));
+    });
+  });
+})();
 </script>
 </body>
 </html>

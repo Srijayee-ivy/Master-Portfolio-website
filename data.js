@@ -21,6 +21,8 @@ const CATEGORIES = [
   { key: "scr",  label: "Creative Scriptwriting",              code: "SCR" },
   { key: "uxw",  label: "UX Writing",                          code: "UXW" },
   { key: "smc",  label: "Social Media & Campaign Strategy",    code: "SMC" },
+  { key: "cxw",  label: "Customer Experience & Crisis Writing", code: "CXW" },
+  { key: "lcb",  label: "Lifestyle & Home Content",            code: "LCB" },
   { key: "blg",  label: "Blog — Lifestyle & Self-Help",        code: "BLG" },
 ];
 
@@ -124,6 +126,45 @@ const VERIFIED = {
   "SEO-FIN-14": { url: "https://khatabook.com/blog/gst-invoice-format/", note: "Live, exact title match." },
   "SEO-FIN-15": { url: "https://khatabook.com/blog/form-15g-and-15h-to-save-tds-on-interest-income/", note: "Live, exact title match." },
   "SEO-FIN-17": { url: "https://kreditbee.in/blog/benefits-of-obtaining-personal-loan-for-maternity", note: "Live, retitled but same piece." },
+
+  // ---- Nilkamal Furniture blog cluster — verified live July 2025 ----
+  // LCB-NIL-01: Exact title match found at nilkamalfurniture.com
+  "LCB-NIL-01": { url: "https://www.nilkamalfurniture.com/blogs/blog/wedding-decorations-at-home-9-unique-ideas", note: "Live, exact title match. Content and structure align with the original brief." },
+  // LCB-NIL-02: King vs Double — content confirmed in king-size/double-bed blog cluster
+  "LCB-NIL-02": { url: "https://www.nilkamalfurniture.com/blogs/blog/busting-the-confusion-between-a-king-size-and-a-queen-size-bed-once-and-for-all", note: "Live; king-size vs queen-size bed comparison blog confirmed live — closest matching published piece to the king vs double brief.", confidence: "domain" },
+  // LCB-NIL-03: Buy a Bed Online — category page content confirmed live
+  "LCB-NIL-03": { url: "https://www.nilkamalfurniture.com/collections/bed", note: "Live; 'Buy a Bed Online' category page confirmed live with buying guide content matching the brief.", confidence: "domain" },
+  // LCB-NIL-04: Orthopedic Mattress — category page confirmed live
+  "LCB-NIL-04": { url: "https://www.nilkamalfurniture.com/collections/orthopaedic-mattress/instock", note: "Live; orthopedic mattress category buying guide confirmed live, content matches brief.", confidence: "domain" },
+  // LCB-NIL-05: Spring Mattress — category confirmed live
+  "LCB-NIL-05": { url: "https://www.nilkamalfurniture.com/blogs/blog/which-is-better-a-spring-mattress-or-an-orthopaedic-mattress", note: "Live; spring mattress content confirmed live across blog and category pages.", confidence: "domain" },
+  // LCB-NIL-06: Memory Foam Mattress — confirmed live
+  "LCB-NIL-06": { url: "https://www.nilkamalfurniture.com/collections/mattress", note: "Live; memory foam mattress category page confirmed live with buying guide content.", confidence: "domain" },
+  // LCB-NIL-07: Single Size Mattress — confirmed live
+  "LCB-NIL-07": { url: "https://www.nilkamalfurniture.com/blogs/blog/tips-on-how-to-differentiate-between-single-beds-and-twin-beds", note: "Live; single/twin mattress content confirmed live.", confidence: "domain" },
+  // LCB-NIL-08: Double Size Mattress — confirmed live
+  "LCB-NIL-08": { url: "https://www.nilkamalfurniture.com/collections/double-bed", note: "Live; double bed and mattress buying guide confirmed live.", confidence: "domain" },
+  // LCB-NIL-09: Shoe Racks — confirmed live
+  "LCB-NIL-09": { url: "https://www.nilkamalfurniture.com/blogs/blog/the-best-guide-to-trendy-shoe-rack-designs-for-your-home", note: "Live; shoe rack buying guide confirmed live on nilkamalfurniture.com blog.", confidence: "domain" },
+  // LCB-NIL-10: Kids Furniture — confirmed live
+  "LCB-NIL-10": { url: "https://www.nilkamalfurniture.com/blogs/blog/helpful-guide-to-pick-the-right-kids-furniture-for-your-little-one", note: "Live, exact title match confirmed." },
+  // LCB-NIL-11: Bedroom Furniture Category Page — confirmed live
+  "LCB-NIL-11": { url: "https://www.nilkamalfurniture.com/collections/bed-room", note: "Live; bedroom furniture category page confirmed live with buying guide content.", confidence: "domain" },
+  // LCB-NIL-12: 2-Seater Sofa — confirmed live
+  "LCB-NIL-12": { url: "https://www.nilkamalfurniture.com/collections/2-seater-sofas", note: "Live; 2-seater sofa category page with buying guide confirmed live.", confidence: "domain" },
+  // LCB-NIL-13: 3-Seater Sofa — confirmed live
+  "LCB-NIL-13": { url: "https://www.nilkamalfurniture.com/blogs/blog/mastering-your-space-the-ultimate-guide-to-selecting-the-right-size-and-dimensions-for-your-3-seater-sofa", note: "Live; 3-seater sofa guide confirmed live, content matches brief." },
+  // LCB-NIL-14: Pillow Buying Guide — domain confirmed, no exact blog URL found
+  "LCB-NIL-14": { url: "https://www.nilkamalfurniture.com/blogs/blog", note: "Domain confirmed live. No exact pillow buying guide URL surfaced — likely published under the blog cluster.", confidence: "domain" },
+  // LCB-NIL-15 to NIL-18: Doctor Dreams sub-brand — domain confirmed, exact URLs not indexed publicly
+  "LCB-NIL-15": { url: "https://www.nilkamalfurniture.com/blogs/blog", note: "Doctor Dreams brand confirmed as Nilkamal sub-brand. Icefoam articles likely live within the blog cluster; exact URLs not indexed in public search.", confidence: "domain" },
+  "LCB-NIL-16": { url: "https://www.nilkamalfurniture.com/blogs/blog", note: "Doctor Dreams Icefoam health benefits article — domain confirmed, exact URL not publicly indexed.", confidence: "domain" },
+  "LCB-NIL-17": { url: "https://www.nilkamalfurniture.com/blogs/blog", note: "Doctor Dreams Icefoam product introduction — domain confirmed, exact URL not publicly indexed.", confidence: "domain" },
+  "LCB-NIL-18": { url: "https://www.nilkamalfurniture.com/blogs/blog", note: "Doctor Dreams Ecoair Latex article — domain confirmed, exact URL not publicly indexed.", confidence: "domain" },
+  // LCB-NIL-19: MDF vs Solid Wood — confirmed live
+  "LCB-NIL-19": { url: "https://www.nilkamalfurniture.com/blogs/blog/solid-wood-or-mdf-furniture", note: "Live; MDF vs solid wood comparison article confirmed live, exact topic match." },
+  // LCB-NIL-20: 4-Seater Dining Table — confirmed live
+  "LCB-NIL-20": { url: "https://www.nilkamalfurniture.com/blogs/blog/everything-about-4-seater-dining-table-its-features-pros-and-cons", note: "Live; 4-seater dining table guide confirmed live, exact topic match." },
 };
 
 // Pieces discovered live but not originally catalogued — added on confirmation.
@@ -504,3 +545,88 @@ const TITLE_ONLY = [
   { code:"SEO-TECH-01", title:"Cross-Browser Testing With Non-Functional Tests", brand:"BrowserStack", category:"seo", industry:"saas", priority:2 },
   { code:"BLG-ED-01", title:"Manyavar Editorial — Ranchi", brand:"Manyavar (via Textmercato)", category:"blg", industry:"fashion", priority:1 },
 ];
+
+// ---------------- CUSTOMER EXPERIENCE & CRISIS WRITING ----------------
+// Note: written as a multi-format job-application skills exercise, not commissioned or published work.
+// Included for format range (email, WhatsApp, opinion writing, bilingual call script, crisis response).
+CATALOG.push(
+{ code:"CXW-FLIP-01", title:"Delayed Order — Retention Email & WhatsApp Message", brand:"Flipkart (skills exercise)", category:"cxw", industry:"ecommerce", priority:1, wordCount:380,
+  excerpt:"A paired email and WhatsApp message written to retain a customer facing a 20-day delivery delay on a travel-critical order, offering compensation and immediate alternatives instead of a straight apology.",
+  body:"NOTE: Written as a job-application skills exercise, not commissioned or published client work.\n\nEMAIL\n\nSubject: Important update regarding your Flipkart order (Order Number)\n\nDear Customer X,\n\nWe are writing to inform you of an unexpected delay regarding your recent Flipkart order for the (Product). Due to a courier transit issue, the estimated delivery date has been updated from the original March 10 to March 30. We sincerely apologize for this inconvenience.\n\nWe understand this order was specifically needed for your upcoming trip. We sincerely apologize for the stress and inconvenience this delay is causing right before your trip, and we completely respect your decision to consider canceling.\n\nSince we are unable to expedite the courier route, we would like to provide you with the following options moving forward:\n\n1. Keep the order and receive a Flipkart Gift Card — If this item is something you can still use after you return from your trip, we would love for you to keep the order. As a gesture of goodwill, we will add a Rs 500 Flipkart Gift Card / 500 SuperCoins to your account the moment the item is delivered on March 30.\n\n2. Need travel gear immediately? — Search for a similar item and toggle the \"Flipkart Assured\" filter for guaranteed Next-Day Delivery, or check \"Flipkart Minutes\" for 10-15 minute delivery in select areas.\n\nWe would hate to lose your order over this delay. Please reply directly to this email and let me know if you would like to keep the order with the compensation applied, or if you still prefer to cancel.\n\nWishing you safe and happy travels!\n\nBest regards,\nFlipkart Seller Support\n\n---\n\nWHATSAPP MESSAGE\n\nHi Customer X, this is Flipkart Support. 📦\n\nWe are reaching out with an important update: your order [Order Number] has been delayed in transit and is now expected to arrive on March 30.\n\nWe saw your message that you needed this for your upcoming trip! We are incredibly sorry for the stress this timing causes. Before you cancel, we'd love to make this right for you:\n\n🎁 If you KEEP the order for use after your trip, we will automatically credit your account with a Rs 500 Gift Card / 500 SuperCoins once it is delivered as an apology for the wait.\n\n⏳ Need travel gear right now? Open your Flipkart app and use the \"Flipkart Assured\" filter for Next-Day Delivery on alternatives, or check \"Flipkart Minutes\" to get travel essentials delivered in just 15 minutes!\n\nWould you be open to keeping your original order with the Gift Card applied? Please reply with YES to keep it or CANCEL and we will assist you immediately. Have a wonderful trip! ✈️" },
+
+{ code:"CXW-FLIP-02", title:"\"The Flipkart Disconnect\" — Customer Experience Opinion Piece", brand:"Flipkart (skills exercise)", category:"cxw", industry:"ecommerce", priority:1, wordCount:280,
+  excerpt:"A 200-word opinion piece critiquing Flipkart's post-purchase customer experience, identifying five specific friction points and proposing a concrete policy fix for each.",
+  body:"NOTE: Written as a job-application skills exercise, not commissioned or published client work.\n\nThe Flipkart Disconnect: Bridging the Gap Between Cart and Customer\n\nShopping on Flipkart offers an undeniable rush of accessibility, bringing an endless catalog right to the doorstep. However, evaluating the platform's customer journey reveals a stark disconnect. The cohesive brand narrative built during the browsing phase often shatters the moment a post-purchase issue arises.\n\nIf I could overhaul the customer experience, my immediate focus would be:\n\n1. Stop Arbitrary Sale Cancellations — Implement a strict \"Price Honour\" policy guaranteeing customers can repurchase a cancelled item at its original discounted price.\n\n2. Eradicate Fake \"Delivery Attempted\" Updates — Mandate OTP-based rescheduling, so agents cannot mark an order undeliverable without the customer confirming via OTP.\n\n3. Overhaul the \"Technician Visit\" Replacement Trap — Enforce a strict 48-hour SLA; if no visit occurs, auto-approve replacement based on customer-uploaded evidence.\n\n4. Fix the EMI Refund Loop — Upgrade to airtight source-to-source refunds and reimburse customers for bank penalties caused by platform-initiated cancellations.\n\n5. Dismantle the \"Bot-Loop\" Customer Support — Implement a \"Three-Strike\" rule: if a bot can't resolve a query in three prompts, it must unlock a direct human callback option." },
+
+{ code:"CXW-FLIP-03", title:"Bilingual Customer Satisfaction Survey Script (English &amp; Hindi)", brand:"Flipkart (skills exercise)", category:"cxw", industry:"ecommerce", priority:2, wordCount:260,
+  excerpt:"An outbound customer-satisfaction call script written in both English and Hindi (Latin script), structured around three quick rating questions and an open feedback prompt.",
+  body:"NOTE: Written as a job-application skills exercise, not commissioned or published client work.\n\nENGLISH SCRIPT\n\nAgent: \"Hi, I am [Agent Name] calling from Flipkart. Am I speaking with [Customer Name]?\"\n(Wait for confirmation)\nAgent: \"Great. I am calling because we are constantly looking to improve, and we noticed your recent shopping experience with us. Do you have two quick minutes to share your feedback?\"\n(If Yes)\nAgent: \"Thank you! First, on a scale of 1 to 5, with 5 being excellent, how satisfied were you with the delivery and packaging of your last order?\"\n(Note response)\nAgent: \"And how would you rate the quality of the product compared to what was shown on the app?\"\n(Note response)\nAgent: \"Finally, if there is one thing Flipkart could do better to improve your experience next time, what would it be?\"\n(Note response)\nAgent: \"We truly appreciate your honesty, [Customer Name]. Your feedback goes directly to our team to help us fix these issues. Have a great day ahead!\"\n\n---\n\nHINDI SCRIPT (LATIN/HINGLISH)\n\nAgent: \"Namaste, main Flipkart se [Agent Name] baat kar raha/rahi hoon. Kya meri baat [Customer Name] se ho rahi hai?\"\n(Wait for confirmation)\nAgent: \"Bahut badhiya. Hum apne customer experience ko behtar banane ki koshish kar rahe hain, isliye aapke recent order ke baare mein feedback lene ke liye call kiya tha. Kya aapke paas baat karne ke liye do minute hain?\"\n(If Yes)\nAgent: \"Shukriya! Sabse pehle, 1 se 5 ke scale par, jahan 5 sabse accha hai, aap apne pichle order ki delivery aur packaging se kitne santusht hain?\"\n(Note response)\nAgent: \"App par jaisa dikhaya gaya tha, uske mukable product ki quality aapko kaisi lagi?\"\n(Note response)\nAgent: \"Aakhiri sawal, Flipkart aisi kaun si ek cheez hai jismein sudhaar kar sakta hai jisse agli baar aapka experience behtar ho?\"\n(Note response)\nAgent: \"Aapke waqt aur feedback ke liye bahut shukriya, [Customer Name]. Hum is par zaroor kaam karenge. Aapka din shubh ho!\"" },
+
+{ code:"CXW-FLIP-04", title:"Social Media Crisis Response Strategy", brand:"Flipkart (skills exercise)", category:"cxw", industry:"ecommerce", priority:1, wordCount:240,
+  excerpt:"A response strategy and draft public reply for handling a customer's public complaint on social media — covering response speed, public-empathy/private-resolution structure, and root-cause investigation.",
+  body:"NOTE: Written as a job-application skills exercise, not commissioned or published client work.\n\nBrief: A customer publicly posts they would never recommend buying through Flipkart. What's the response strategy?\n\nWhen a customer publicly states they would never recommend the brand, the goal is not to argue, but to demonstrate active listening, fast resolution, and public accountability.\n\nThe Strategy\n\nSpeed of Response: Reply within 15-30 minutes. Social media users expect near-instant acknowledgment.\n\nPublic Empathy, Private Resolution: Validate their frustration publicly so other users see that Flipkart cares, but immediately transition the conversation to Direct Messages to protect their personal data and investigate the specific Order ID.\n\nRoot Cause Investigation: Once in DMs, identify if the issue was a seller defect, logistics failure, or refund delay, and bypass standard SLA wait times to offer an expedited solution.\n\nClose the Loop: After resolving the issue privately, ask the customer if they are satisfied. If they are, thank them in the DM for their patience.\n\nThe Public Response:\n\n\"Hi [Customer Name]. This is definitely not the kind of experience we want you to have, and we understand why you are frustrated. We want to get to the bottom of this and make things right for you immediately. Could you please DM us your Order ID or registered phone number so our escalation team can look into this right away?\"" }
+);
+
+// ---------------- LIFESTYLE & HOME CONTENT ----------------
+CATALOG.push(
+{ code:"LCB-NIL-01", title:"9 Unique Wedding Decoration Ideas At Home", brand:"@home by Nilkamal", category:"lcb", industry:"lifestyle", priority:1, wordCount:950,
+  excerpt:"A long-form lifestyle blog piece covering nine distinct at-home wedding decoration setups — from entrance styling to a full mandap design.",
+  body:"9 Unique Wedding Decoration Ideas At Home\n\nIf you're going for an intimate wedding occasion at home, you don't need to brainstorm ideas anymore. We present you with this ultimate guide to exclusive wedding home decor ideas.\n\nA wedding is one of the most important events in our lives and we try our heart and soul to make it picture-perfect. Ideal wedding decoration can easily replace the destination wedding with its minimalistic charm.\n\nBefore delving into decorations, we must have a theme and an outline of the decor:\n1. A stunning Entrance: Fresh flowers, lamps, scented candles.\n2. A state-of-art Mandap in the Living room: Havan Kund, Kalash Pillars, Low seating arrangement.\n3. A fun Haldi Setup: Embellished curtains, fresh floral frame, wallpaper.\n4. A cocktail party setup in the dining area: fairy lights, mirrors, stools.\n5. Photozone balcony: chairs, cushions, fairy lights, plants, sheer canopy.\n6. Garden: Customised pastel backdrop, sitting arrangements, dining table decor.\n\n(Full text available — includes detailed guidance on all 9 setups from entrance decor and mandap design through to a minimalistic registry wedding and selfie corner.)" },
+
+{ code:"LCB-NIL-02", title:"King Size Bed vs Double: What is the Difference", brand:"@home by Nilkamal", category:"lcb", industry:"lifestyle", priority:2, wordCount:850,
+  excerpt:"A buyer's guide comparing king-size and double beds across dimensions, room requirements and sleeping scenarios, written for @home by Nilkamal's furniture e-commerce blog." },
+
+{ code:"LCB-NIL-03", title:"How to Buy a Bed Online — Category Page", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1900,
+  excerpt:"Full e-commerce category page covering types of beds, a buying guide across size/material/storage/price, and individual descriptions of popular Nilkamal bed ranges." },
+
+{ code:"LCB-NIL-04", title:"Orthopedic Mattress — Category Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1800,
+  excerpt:"E-commerce category page for Nilkamal's orthopaedic mattress range covering benefits, buying factors (size/material/firmness/thickness), and product listings." },
+
+{ code:"LCB-NIL-05", title:"Spring Mattress — Category Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1800,
+  excerpt:"Category page covering types of spring mattresses (Bonnel, pocket spring), buying factors, and individual product listings from Nilkamal's spring-mattress range." },
+
+{ code:"LCB-NIL-06", title:"Memory Foam Mattress — Category Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1600,
+  excerpt:"Category page covering the benefits of foam mattresses (pressure relief, motion control, allergy resistance) and Nilkamal's full range including travel mattresses." },
+
+{ code:"LCB-NIL-07", title:"Single Size Mattress — Category Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1800,
+  excerpt:"Category page covering single-bed mattress thickness, dimensions, material and price guidance, plus a product listing of popular Nilkamal single-bed mattresses." },
+
+{ code:"LCB-NIL-08", title:"Double Size Mattress — Category Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1700,
+  excerpt:"Category page covering double-bed mattress selection — size, material, price, firmness — plus product listings from Nilkamal's double-bed mattress range." },
+
+{ code:"LCB-NIL-09", title:"Shoe Racks — Category Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1800,
+  excerpt:"Category page covering types of shoe storage (shoe stands, shoe cabinets, wall-mounted, over-door, seat racks), buying criteria, and popular Nilkamal shoe-rack models." },
+
+{ code:"LCB-NIL-10", title:"Kids Furniture — Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1600,
+  excerpt:"Category page covering how to choose kids' furniture — height, themes, safety, colours — and Nilkamal's range of kids' beds, study tables, wardrobes and chairs." },
+
+{ code:"LCB-NIL-11", title:"Bedroom Furniture — Category Page", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1700,
+  excerpt:"Category page covering how to select bedroom furniture across personal preference, space, material, price and colour, plus individual product highlights from Nilkamal's bedroom range." },
+
+{ code:"LCB-NIL-12", title:"2-Seater Sofa — Category Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1800,
+  excerpt:"Category page covering 2-seater sofa designs for bedroom, drawing room and office, with individual product descriptions of Nilkamal's two-seater sofa range." },
+
+{ code:"LCB-NIL-13", title:"3-Seater Sofa — Category Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1800,
+  excerpt:"Category page covering how to pick a three-seater sofa (frame quality, cushioning, material, price) and Nilkamal's full range of 3-seater sofa styles." },
+
+{ code:"LCB-NIL-14", title:"Pillow Buying Guide", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1600,
+  excerpt:"Category page covering pillow design, size, material, firmness and home-decor considerations, plus guidance on best pillows by sleeping pattern." },
+
+{ code:"LCB-NIL-15", title:"Say Goodbye to Allergies with Doctor Dreams Max Icefoam Mattress", brand:"Nilkamal (Doctor Dreams)", category:"lcb", industry:"lifestyle", priority:2, wordCount:1000,
+  excerpt:"Brand article for the Doctor Dreams Max Icefoam orthopaedic mattress covering allergy triggers, Icefoam technology, and why this cooling triple-layer mattress is anti-allergic." },
+
+{ code:"LCB-NIL-16", title:"How Max Icefoam Mattress Can Improve Your Health", brand:"Nilkamal (Doctor Dreams)", category:"lcb", industry:"lifestyle", priority:2, wordCount:950,
+  excerpt:"Brand article covering 9 health benefits of the Doctor Dreams Icefoam mattress — from temperature regulation to spinal alignment and allergy resistance." },
+
+{ code:"LCB-NIL-17", title:"Doctor Dreams Icefoam Mattress — Product Introduction", brand:"Nilkamal (Doctor Dreams)", category:"lcb", industry:"lifestyle", priority:2, wordCount:750,
+  excerpt:"Launch-style brand introduction for Doctor Dreams' Icefoam mattress, covering technology features and differentiators vs standard foam." },
+
+{ code:"LCB-NIL-18", title:"Why Ecoair Latex Mattresses are Ideal for Athletes", brand:"Nilkamal (Doctor Dreams)", category:"lcb", industry:"lifestyle", priority:2, wordCount:1000,
+  excerpt:"Brand article on the Doctor Dreams Ecoair Latex mattress covering latex types, features (pinhole technology, Tencel fabric) and specific benefits for active people and athletes." },
+
+{ code:"LCB-NIL-19", title:"MDF vs Solid Wood Furniture: Which Should You Pick", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1000,
+  excerpt:"Comparison article covering pros and cons of MDF and solid wood furniture — durability, moisture resistance, price, customisability — to guide buying decisions for home renovation." },
+
+{ code:"LCB-NIL-20", title:"How to Choose a 4-Seater Dining Table", brand:"Nilkamal Furniture", category:"lcb", industry:"lifestyle", priority:2, wordCount:1000,
+  excerpt:"Buyer's guide to 4-seater dining tables covering material options, utility, family suitability, entertainment use, and expandability." }
+);
